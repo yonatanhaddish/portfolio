@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    border: rgb(255, 255, 255);
+}
+
+/*styling the header section*/
+header {
+    padding: 20px 30px;
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* styling the h1 in side header*/
+header h1 {
+    font-size: 50px ;
+    margin: 0 ;
+}
+
+/*styling <a> tag in the header*/
+header h1 a {
+    background-color: rgb(68, 182, 235);
+    text-decoration: none;
+    color: black;
+    margin-left: -28px;
+    padding-left: 40px;
+}
+
+/*styling <nav> tag in the header*/
+header nav {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/*styling <ul> tag in the header*/
+header nav ul {
+    padding-top: 10px;
+    padding-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;   
+}
+/*styling <a> tag in the header of the <ul> tag*/
+header nav ul li a {
+    color: rgb(68, 182, 235);
+    padding: 10px 20px;
+}
+
+/*applying style to the footer*/
+footer {
+    margin-left: 60px;
+    width: 100%;
+    padding: 40px 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/*applying style to h2 of the footer*/
+footer h2 {
+    color: rgb(15, 70, 95);
+    font-size: 35px;
+    margin: 0;
+}
+
+/*applying style to <nav> tag of the footer*/
+footer nav {
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+/*applying style to <ul> of the footer*/
+footer nav ul {
+    padding-right: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+
+}
+
+/*applying style to <a> tag of the footer*/
+footer nav ul a {
+    padding: 60px;
+    color: black;
+    
+    
+}
+
+/*adding vertical line to the contact me section*/
+.contact-me {
+    border-right: solid 3px rgb(15, 70, 95);
+    height: 50px;
+}
