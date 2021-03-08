@@ -1,105 +1,75 @@
+/* universal styling */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    border: rgb(255, 255, 255);
+:root {
+    --primary-color: rgb(52, 137, 137);
+    --secondary-color: #262626;
+    --tertiary-color: #e8e8e8;
+    --quaternary-color: #787878;
+    --font-primary: Helvetica, 'Times New Roman', Times, serif;
+    --font-secondary: Helvetica, Tahoma, sans-serif;
 }
 
-/*styling the header section*/
-header {
-    padding: 20px 30px;
-    background-color: rgb(34, 34, 34);
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-/* styling the h1 in side header*/
-header h1 {
-    font-size: 50px ;
-    margin: 0 ;
-}
-
-/*styling <a> tag in the header*/
-header h1 a {
-    background-color: rgb(68, 182, 235);
+/* link styling */
+a {
     text-decoration: none;
-    color: black;
-    margin-left: -28px;
-    padding-left: 40px;
+    color: var(--secondary-color);
 }
 
-/*styling <nav> tag in the header*/
-header nav {
-    font-weight: bold;
-    font-size: 18px;
+/* header styling */
+header {
+    
+    padding: 35px 35px 20px 0px;
+    background: var(--tertiary-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+    top: 0;
+    border-bottom: 4px solid var(--quaternary-color);
+    z-index: 999;
 }
 
-/*styling <ul> tag in the header*/
+
+
 header nav ul {
-    padding-top: 10px;
-    padding-right: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    list-style: none;   
-}
-/*styling <a> tag in the header of the <ul> tag*/
-header nav ul li a {
-    color: rgb(68, 182, 235);
-    padding: 10px 20px;
-}
-
-/*applying style to the footer*/
-footer {
-    margin-left: 60px;
-    width: 100%;
-    padding: 40px 30px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-/*applying style to h2 of the footer*/
-footer h2 {
-    color: rgb(15, 70, 95);
-    font-size: 35px;
-    margin: 0;
-}
-
-/*applying style to <nav> tag of the footer*/
-footer nav {
-    font-size: 18px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-}
-
-/*applying style to <ul> of the footer*/
-footer nav ul {
-    padding-right: 60px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     list-style: none;
-    align-items: center;
-
 }
 
-/*applying style to <a> tag of the footer*/
-footer nav ul a {
-    padding: 60px;
-    color: black;
-    
-    
+header h1 a{
+    color: white;
+    background: var(--primary-color);
+    font-size: 40px;
+    padding: 5px 50px;
+    font-family: var(--font-primary);
+    border-radius: 0 25px 25px 0;
 }
 
-/*adding vertical line to the contact me section*/
-.contact-me {
-    border-right: solid 3px rgb(15, 70, 95);
-    height: 50px;
+
+
+header nav ul li {
+    margin: 0 5px;
+    padding-bottom: 10px;
+    padding-top: 20px;
 }
+
+header nav ul li a {
+    font-size: 20px;
+    padding: 5px 15px;
+    font-family: var(--font-secondary);
+    border-bottom: 2px solid var(--primary-color)
+}
+
+header nav ul li a:hover {
+    background: var(--primary-color);
+    color: white;
+    transition: 0.8s;
+}
+
