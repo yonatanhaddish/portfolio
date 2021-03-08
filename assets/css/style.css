@@ -90,3 +90,220 @@ header nav ul li a:hover {
     border-radius: 25px 0 0 25px;
     background-color: rgb(52, 137, 137);
 }
+
+
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 0;
+    display: flex;
+}
+
+.container-title {
+    width: 25%;
+    font-size: 48px;
+    font-weight: bold;
+    font-family: var(--font-primary);
+    border-right: solid black 4px;
+    border-radius: 15px;
+    text-align: right;
+    padding-right: 20px;
+    margin-right: 10px;
+}
+
+.container-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container-content p {
+    width: 70%;
+    margin-left: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: var(--font-secondary);
+}
+
+
+
+
+.about-picture {
+    background-image: url(./images/suit.jpg);
+    background-size: cover;
+    height: 300px;
+    width: 230px;
+    border-radius: 5px;
+}
+
+
+
+
+.grid-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.grid-layout {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(3, 175px);
+    grid-gap: 10px;
+    grid-auto-flow: dense;
+}
+
+.project-1 {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.project-image {
+    border: 4px solid var(--primary-color);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: var(--tertiary-color);
+}
+
+
+
+.workimages {
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+
+.workimages:hover {
+    opacity: 1;
+}
+
+.description {
+    position: absolute;
+    width: 100px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    background: var(--primary-color);
+    border-radius: 0 15px 15px 0;
+    text-align: left;
+    color: var(--secondary-color);
+}
+
+.description h3 {
+    color: var(--tertiary-color);
+    font-size: 14px;
+    font-family: var(--font-primary);
+}
+
+.description p {
+    color: var(--tertiary-color);
+    font-size: 10px;
+    font-family: var(--font-secondary);
+}
+
+
+.contact {
+
+    align-content: center;
+    font-family: var(--font-secondary);
+    font-weight: 18px;
+}
+
+.contact a {
+    margin: 10px;
+    padding: 10px;
+}
+
+.contact a:hover {
+    background: var(--primary-color);
+    color: var(--tertiary-color);
+    transition: 0.5s;
+}
+
+
+
+
+/* media queries */
+
+
+@media screen and (max-width: 980px) {
+
+
+    
+    header  {
+        padding-bottom: 0;
+        position: relative;
+        justify-content: center;
+    }
+    
+    header h1 a{
+        width: 100%;
+        text-align: center;
+        border-radius: 25px 25px 25px 25px;
+    }
+
+    
+    .grid-layout {
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-rows: repeat(4, 100px);
+    }
+
+    .workimages {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    main {
+        padding: 0 15px;
+    }
+    .container {
+        display: inline;
+    }
+
+    header h1 a{
+        width: 100%;
+        text-align: center;
+        border-radius: 0px 0px 0px 0px;
+        display: block;
+        text-align: center;
+    }
+
+    .container-title {
+        width: 100%;
+        text-align: center;
+        border-right: none;
+        border-bottom: solid black 4px;
+        margin: 20px 0;
+        padding: 0;
+        padding-bottom: 10px;
+    }
+
+ 
+
+}
+
+@media screen and (max-width: 575px) {
+    header nav ul {
+        justify-content: space-around;
+    }
+    header h1 a{
+        width: 100%;
+        text-align: center;
+        border-radius: 0px 0px 0px 0px;
+        display: block;
+        text-align: center;
+    }
+    
+    header nav ul li a {
+        margin-top: 10px;
+    }
+}
