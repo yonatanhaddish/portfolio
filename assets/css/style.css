@@ -73,3 +73,20 @@ header nav ul li a:hover {
     transition: 0.8s;
 }
 
+.hero {
+    background-image: url(./images/img1.jpg);
+    color:white;
+    font-family: var(--font-secondary);
+    height: 250px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border-bottom: 4px solid var(--quaternary-color);
+}
+.hero h2{
+    padding: 20px;
+    margin: 20px;
+    margin-right: 0;
+    border-radius: 25px 0 0 25px;
+    background-color: rgb(52, 137, 137);
+}
