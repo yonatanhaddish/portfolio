@@ -1,16 +1,28 @@
-# portfolio
+# Yonatan Haddish
 
-<<<<<<< HEAD
-have used var to indicate some variable types in css
+## Description
+This is my portfolio to showcase a little bit about me, some of my projects, and how to contact me.
 
+## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
 
+## Installation
+This does not require installation
 
-## git
-i had issue with my git for some time. It wouldnt let me commit my work into the remote. but now it is okay
+## Usage
+The usage of this application should only be to view my portfolio.
 
+## Contributing
+Contributors should read the intallation section.
 
-# link for the projects
-https://yonatanhaddish.github.io/portfolio/
-=======
-![_C__Users_yonih_OneDrive_Desktop_projects_portfolio_index html](https://user-images.githubusercontent.com/78513952/110274829-c795ac00-7f9d-11eb-9b94-01ca1dd0e4ca.png)
->>>>>>> 85a97372c39ddfce0cb9493e4671adf6ce689216
+## Tests
+There are no tests for this application.
+
+## Questions
+If you have any questions about this project, please contact me directly at yonihailsh@gmail.com
+
+<img width="960" alt="portfolio-1" src="https://user-images.githubusercontent.com/78513952/133822853-8590c82e-d9f7-4f61-8102-fe4f71113508.png">
